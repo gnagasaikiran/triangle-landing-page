@@ -7,10 +7,8 @@ var gulp = require('gulp'),
 
 gulp.task('compileSass', function() {
   return gulp.src("assets/css/main.scss")
-    
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    
     .pipe(gulp.dest('assets/css'))
     .pipe(browserSync.stream());
 });
@@ -18,10 +16,6 @@ gulp.task('compileSass', function() {
 gulp.task('watchFiles', function() {
   gulp.watch('assets/css/**/*.scss', ['compileSass']);
 })
-
-gulp.task('clean', function() {
-  del(['dist', 'assets/css/main.css*', 'assets/js/main*.js*']);
-});
 
 gulp.task('serve', ['watchFiles'], function(){
   browserSync.init({

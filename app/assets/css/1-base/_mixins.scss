@@ -2,26 +2,30 @@
 
 @mixin h1-font-style {
 	font-size: $header-font;
-	font-weight: $bold;
+	font-weight: $semibold;
 	line-height: 1.2;
+	font-family: 'Source Sans Pro';
 }
 
 @mixin h2-font-style {
 	font-size: $h2-font-size;
 	line-height: 1.2;
+	font-family: 'Source Sans Pro';
 }
 
 @mixin h3-font-style {
 	font-size: $h3-font-size;
 	color: $bg-color;
 	line-height: 1.2;
+	font-family: 'Source Sans Pro';
 }
 
 @mixin p-font-style {
 	font-size: 16px;
-	color: $text-color;
-	line-height: 1.2;
+	color: $bg-color;
+	line-height: 125%;
 	font-weight: $semibold;
+	font-family: 'Source Sans Pro';
 }
 
 @mixin primary-cta {
@@ -37,3 +41,8 @@
 	vertical-align: middle;
 }
 
+@mixin w-100 {
+	@media (min-width: 0px) and (max-width: 767px) {
+				width: 100%;
+			}
+}

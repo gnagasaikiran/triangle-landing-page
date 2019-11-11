@@ -7,6 +7,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
+  background-color: #fff;
   font-weight: 400;
   line-height: 125%; }
 
@@ -19,23 +20,27 @@ a, a:hover, a:focus, a:active {
 
 .h1 {
   font-size: 60px;
-  font-weight: 700;
-  line-height: 1.2; }
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: 'Source Sans Pro'; }
 
 .h2 {
   font-size: 40px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-family: 'Source Sans Pro'; }
 
 .h3 {
   font-size: 18px;
   color: #F4F4F4;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-family: 'Source Sans Pro'; }
 
 p {
   font-size: 16px;
-  color: #0A1118;
-  line-height: 1.2;
-  font-weight: 600; }
+  color: #F4F4F4;
+  line-height: 125%;
+  font-weight: 600;
+  font-family: 'Source Sans Pro'; }
 
 .container {
   max-width: 1140px;
@@ -65,7 +70,7 @@ i {
 .footer li {
   padding-right: 10px; }
   .footer li a {
-    color: #0A1118; }
+    color: #F4F4F4; }
 
 #Header {
   background-color: #fff;
@@ -89,13 +94,11 @@ i {
 
 .banner-section {
   position: relative;
-  padding: 50px 0; }
+  padding: 40px 0; }
   .banner-section .lhs {
-    background: url("../img/overlay_banner.svg") no-repeat;
-    background-size: cover;
     height: 540px;
     position: absolute;
-    width: 49%; }
+    width: 50%; }
     .banner-section .lhs .text-block {
       top: 50%;
       position: relative;
@@ -104,38 +107,53 @@ i {
               transform: translate(-37%, -50%); }
       .banner-section .lhs .text-block h1 {
         margin-bottom: 10px; }
-    .banner-section .lhs:after {
-      content: '';
-      background-color: orange;
-      width: 32px;
-      height: 32px;
-      position: absolute; }
+      .banner-section .lhs .text-block p {
+        color: #F4F4F4; }
+      .banner-section .lhs .text-block .trans {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -175px;
+        left: -13%;
+        z-index: -1;
+        background: rgba(192, 192, 192, 0.6); }
   .banner-section .rhs {
     background-image: url("../img/banner.jpg");
     background-size: cover;
-    height: 540px; }
-    .banner-section .rhs:after {
-      content: '';
-      background-color: brown;
-      width: 32px;
-      height: 32px;
-      position: absolute; }
+    height: 530px; }
 
 .building-southeast {
   padding: 50px 0; }
   .building-southeast .lhs {
     float: left; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .building-southeast .lhs {
+        float: none; } }
   .building-southeast .rhs {
     width: 50%;
     float: right; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .building-southeast .rhs {
+        width: 100%;
+        float: none; } }
     .building-southeast .rhs h2, .building-southeast .rhs p {
       margin-bottom: 15px; }
   .building-southeast .know-more-cta {
     background-color: #0A1118; }
+    .building-southeast .know-more-cta a {
+      text-transform: uppercase;
+      font-weight: 300; }
+    @media (min-width: 0px) and (max-width: 767px) {
+      .building-southeast .know-more-cta {
+        display: table;
+        margin: 0 auto; } }
   .building-southeast.south {
     background-color: #F4F4F4; }
     .building-southeast.south .lhs {
       width: 50%; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .building-southeast.south .lhs {
+          width: 100%; } }
       .building-southeast.south .lhs .three-div .first {
         padding: 20px;
         background-color: #fff;
@@ -144,7 +162,8 @@ i {
         transition: all 0.1s ease-out; }
         .building-southeast.south .lhs .three-div .first p.title {
           margin-bottom: 10px;
-          font-weight: 700; }
+          font-weight: 600;
+          color: #0A1118; }
         .building-southeast.south .lhs .three-div .first p.descr {
           font-weight: 300; }
         .building-southeast.south .lhs .three-div .first:hover {
@@ -164,8 +183,14 @@ i {
     position: relative; }
     .building-southeast.family .lhs {
       width: 50%; }
+      @media (min-width: 0px) and (max-width: 767px) {
+        .building-southeast.family .lhs {
+          width: 100%; } }
       .building-southeast.family .lhs .content-wrapper {
         padding: 47px; }
+        @media (min-width: 0px) and (max-width: 767px) {
+          .building-southeast.family .lhs .content-wrapper {
+            padding: 14px; } }
         .building-southeast.family .lhs .content-wrapper h2 {
           color: #fff; }
         .building-southeast.family .lhs .content-wrapper .wrapper p {
@@ -173,6 +198,9 @@ i {
           margin-bottom: 10px;
           padding: 20px 0 0 60px;
           line-height: 125%; }
+          @media (min-width: 0px) and (max-width: 767px) {
+            .building-southeast.family .lhs .content-wrapper .wrapper p {
+              padding: 20px; } }
           .building-southeast.family .lhs .content-wrapper .wrapper p:before {
             background: url("../img/tick.svg") no-repeat;
             content: '';
@@ -181,6 +209,9 @@ i {
             height: 20px;
             left: 170px;
             margin-top: 10px; }
+            @media (min-width: 0px) and (max-width: 767px) {
+              .building-southeast.family .lhs .content-wrapper .wrapper p:before {
+                left: 9px; } }
 
 #Footer {
   background-color: #fff;
@@ -198,12 +229,15 @@ i {
       vertical-align: middle; }
   #Footer .contact-us {
     width: 33.3%;
-    float: left; }
+    float: left;
+    padding-top: 10px; }
     #Footer .contact-us li {
       display: inline-block; }
   #Footer .rhs {
     width: 33.3%;
-    float: left; }
+    float: right;
+    padding-top: 10px;
+    text-align: right; }
     #Footer .rhs .social-links li {
       display: inline-block;
       vertical-align: middle; }

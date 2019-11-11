@@ -2,7 +2,7 @@
 	background-color: $white;
 	padding: 30px 0;
 	.copyright {
-		width : 33.3%;
+		width: 33.3%;
 		float: left;
 		.logo {
 			a {
@@ -17,19 +17,22 @@
 		}
 	}
 	.contact-us {
-		width : 33.3%;
+		width: 33.3%;
 		float: left;
+		padding-top: 10px;
 		li {
 			display: inline-block;
 		}
 	}
 	.rhs {
-		width : 33.3%;
-		float: left;
+		width: 33.3%;
+		float: right;
+		padding-top: 10px;
+		text-align: right;
 		.social-links {		
 			li {
 				display: inline-block;
-				vertical-align: middle;
+				vertical-align: middle;				
 			}
 		}
 	}

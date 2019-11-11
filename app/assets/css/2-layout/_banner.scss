@@ -1,39 +1,35 @@
 .banner-section {
 	position: relative;
-	padding: 50px 0;
-	.lhs {	
-		background: url('../img/overlay_banner.svg') no-repeat;
-		background-size: cover;
+	padding: 40px 0;
+	.lhs {		
 		height: 540px;		
 		position: absolute;
-		width: 49%;
+		width: 50%;		
 		.text-block {
 			top: 50%;
 			position: relative;
 			left: 50%;
-			transform: translate(-37%, -50%);
+			transform: translate(-37%, -50%);			
 			h1 {
-				margin-bottom: 10px;
+				margin-bottom: 10px;				
 			}
-		}
-		&:after {
-			content : '';
-			background-color: orange;
-			width: 32px;
-			height: 32px;
-			position: absolute;
-		}
-	}
-	.rhs {		
+			p {
+				color: $bg-color;
+			}
+			.trans {		
+			    width: 100%;
+			    height: auto;
+			    position: absolute;
+			    top: -175px;
+			    left: -13%;
+			    z-index: -1;
+			    background: rgba(192, 192, 192, 0.6);
+			}
+		 }
+		}	
+	.rhs {
 		background-image: url('../img/banner.jpg');
 		background-size: cover;
-		height: 540px;
-		&:after {
-			content : '';
-			background-color: brown;
-			width: 32px;
-			height: 32px;
-			position: absolute;
-		}
-	}
+		height: 530px;	
+	}	
 }

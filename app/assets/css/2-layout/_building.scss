@@ -2,21 +2,39 @@
 	padding: 50px 0;
 	.lhs {
 		float: left;
+		@media (min-width: 0px) and (max-width: 767px) {
+			float: none;
+		}
 	}
-	.rhs {		
+	.rhs {
 		width: 50%;
 		float: right;
+		@media (min-width: 0px) and (max-width: 767px) {
+			width: 100%;
+			float: none;
+		}
 		h2, p {
 			margin-bottom: 15px;
 		}
 	}
 	.know-more-cta {
-		background-color: $text-color;		
+		background-color: $text-color;
+		a {
+			text-transform: uppercase;
+			font-weight: $light;
+		}
+		@media (min-width: 0px) and (max-width: 767px) {
+			display: table;
+			margin: 0 auto;
+		}		
 	}
 	&.south {
-		background-color: $bg-color;		
+		background-color: $bg-color;
 		.lhs {
 			width: 50%;
+			@media (min-width: 0px) and (max-width: 767px) {
+				width: 100%;
+			}
 			.three-div {
 				.first {
 					padding: 20px;
@@ -26,7 +44,8 @@
 					p {
 						&.title {
 							margin-bottom: 10px;
-							font-weight: $bold;
+							font-weight: $semibold;
+							color: $text-color;
 						}
 						&.descr {
 							font-weight: $light;							
@@ -61,9 +80,14 @@
 		position: relative;
 		.lhs {
 			width: 50%;
-			// padding: 50px 0;			
+			@media (min-width: 0px) and (max-width: 767px) {
+				width: 100%;
+			}
 			.content-wrapper {
 				padding: 47px;
+				@media (min-width: 0px) and (max-width: 767px) {
+					padding: 14px;
+				}
 				h2 {
 			  		color: $white;
 			  	}
@@ -73,6 +97,9 @@
 				  		margin-bottom: 10px;
 				  		padding: 20px 0 0 60px;
 				  		line-height: 125%;
+				  		@media (min-width: 0px) and (max-width: 767px) {
+							padding: 20px;
+						}
 					  		&:before {
 				  			background: url('../img/tick.svg') no-repeat;
 				  			content: '';
@@ -81,6 +108,9 @@
 				  			height: 20px;
 				  			left: 170px;
 				  			margin-top: 10px;
+				  			@media (min-width: 0px) and (max-width: 767px) {
+								left: 9px;
+							}
 				  		}
 			  	 	}
 				}
