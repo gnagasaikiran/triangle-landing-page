@@ -52,3 +52,11 @@ i {
 .primary-cta {
 	@include primary-cta;
 }
+.footer {
+	li {
+		padding-right: 10px;
+		a {
+			color: $text-color;
+		}
+	}
+}

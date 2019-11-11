@@ -1,0 +1,36 @@
+#Footer {
+	background-color: $white;
+	padding: 30px 0;
+	.copyright {
+		width : 33.3%;
+		float: left;
+		.logo {
+			a {
+				@include inline-vertical;			
+				img {
+					width: auto;
+				}
+			}
+			p {
+				@include inline-vertical;
+			}			
+		}
+	}
+	.contact-us {
+		width : 33.3%;
+		float: left;
+		li {
+			display: inline-block;
+		}
+	}
+	.rhs {
+		width : 33.3%;
+		float: left;
+		.social-links {		
+			li {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}

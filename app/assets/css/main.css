@@ -62,6 +62,11 @@ i {
   .primary-cta a {
     color: #fff; }
 
+.footer li {
+  padding-right: 10px; }
+  .footer li a {
+    color: #0A1118; }
+
 #Header {
   background-color: #fff;
   padding: 20px 0; }
@@ -176,3 +181,29 @@ i {
             height: 20px;
             left: 170px;
             margin-top: 10px; }
+
+#Footer {
+  background-color: #fff;
+  padding: 30px 0; }
+  #Footer .copyright {
+    width: 33.3%;
+    float: left; }
+    #Footer .copyright .logo a {
+      display: inline-block;
+      vertical-align: middle; }
+      #Footer .copyright .logo a img {
+        width: auto; }
+    #Footer .copyright .logo p {
+      display: inline-block;
+      vertical-align: middle; }
+  #Footer .contact-us {
+    width: 33.3%;
+    float: left; }
+    #Footer .contact-us li {
+      display: inline-block; }
+  #Footer .rhs {
+    width: 33.3%;
+    float: left; }
+    #Footer .rhs .social-links li {
+      display: inline-block;
+      vertical-align: middle; }
