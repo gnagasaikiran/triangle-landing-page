@@ -1,0 +1,31 @@
+{
+  "name": "An Atomic Based SCSS Landing Page",
+  "version": "1.0.0",
+  "description": "An Atomic Based SCSS Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "wapbamboogie",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnagasaikiran/triangle-landing-page"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1"
+  }
+}

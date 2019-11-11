@@ -1,0 +1,90 @@
+.building-southeast {
+	padding: 50px 0;
+	.lhs {
+		float: left;
+	}
+	.rhs {		
+		width: 50%;
+		float: right;
+		h2, p {
+			margin-bottom: 15px;
+		}
+	}
+	.know-more-cta {
+		background-color: $text-color;		
+	}
+	&.south {
+		background-color: $bg-color;		
+		.lhs {
+			width: 50%;
+			.three-div {
+				.first {
+					padding: 20px;
+					background-color: $white;
+					margin-bottom: 20px;
+					transition: all 0.1s ease-out;
+					p {
+						&.title {
+							margin-bottom: 10px;
+							font-weight: $bold;
+						}
+						&.descr {
+							font-weight: $light;							
+						}
+					}
+					&:hover {
+						background-color: $orange;
+						cursor: pointer;
+						transition: all 0.1s ease-out;
+						p {
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		.rhs {
+			padding : 30px;
+			.text-block {
+				h2 {
+					font-weight: $semibold;
+				}
+				p {
+				 
+				}
+			}
+		}	
+	}
+	&.family {
+		background-color: $text-color;
+		padding: 0;
+		position: relative;
+		.lhs {
+			width: 50%;
+			// padding: 50px 0;			
+			.content-wrapper {
+				padding: 47px;
+				h2 {
+			  		color: $white;
+			  	}
+				.wrapper {
+					p {
+				  		color: #f4f4f4;
+				  		margin-bottom: 10px;
+				  		padding: 20px 0 0 60px;
+				  		line-height: 125%;
+					  		&:before {
+				  			background: url('../img/tick.svg') no-repeat;
+				  			content: '';
+				  			position: absolute;
+				  			width: 20px;
+				  			height: 20px;
+				  			left: 170px;
+				  			margin-top: 10px;
+				  		}
+			  	 	}
+				}
+		  	}	 
+		}
+	}
+}

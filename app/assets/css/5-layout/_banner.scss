@@ -1,0 +1,39 @@
+.banner-section {
+	position: relative;
+	padding: 50px 0;
+	.lhs {	
+		background: url('../img/overlay_banner.svg') no-repeat;
+		background-size: cover;
+		height: 540px;		
+		position: absolute;
+		width: 49%;
+		.text-block {
+			top: 50%;
+			position: relative;
+			left: 50%;
+			transform: translate(-37%, -50%);
+			h1 {
+				margin-bottom: 10px;
+			}
+		}
+		&:after {
+			content : '';
+			background-color: orange;
+			width: 32px;
+			height: 32px;
+			position: absolute;
+		}
+	}
+	.rhs {		
+		background-image: url('../img/banner.jpg');
+		background-size: cover;
+		height: 540px;
+		&:after {
+			content : '';
+			background-color: brown;
+			width: 32px;
+			height: 32px;
+			position: absolute;
+		}
+	}
+}

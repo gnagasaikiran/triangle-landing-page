@@ -1,0 +1,178 @@
+/* Custom Mixins -------------------- */
+/* Base Styles -------------------- */
+*, ul, li {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 125%; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2; }
+
+.h2 {
+  font-size: 40px;
+  line-height: 1.2; }
+
+.h3 {
+  font-size: 18px;
+  color: #F4F4F4;
+  line-height: 1.2; }
+
+p {
+  font-size: 16px;
+  color: #0A1118;
+  line-height: 1.2;
+  font-weight: 600; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+img {
+  display: block;
+  width: 100%; }
+
+i {
+  padding-right: 10px; }
+  i.fa.fa-search {
+    font-size: 12px;
+    color: #f0f8ff; }
+
+.primary-cta {
+  padding: 10px;
+  display: inline-block; }
+  .primary-cta a {
+    color: #fff; }
+
+#Header {
+  background-color: #fff;
+  padding: 20px 0; }
+  #Header .logo {
+    float: left; }
+  #Header .menu-wrapper {
+    float: right; }
+    #Header .menu-wrapper ul {
+      display: inline-block; }
+      #Header .menu-wrapper ul li {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 20px; }
+        #Header .menu-wrapper ul li a {
+          color: #0A1118;
+          text-transform: uppercase;
+          font-size: 15px; }
+    #Header .menu-wrapper .primary-cta {
+      background-color: #C8122E; }
+
+.banner-section {
+  position: relative;
+  padding: 50px 0; }
+  .banner-section .lhs {
+    background: url("../img/overlay_banner.svg") no-repeat;
+    background-size: cover;
+    height: 540px;
+    position: absolute;
+    width: 49%; }
+    .banner-section .lhs .text-block {
+      top: 50%;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translate(-37%, -50%);
+              transform: translate(-37%, -50%); }
+      .banner-section .lhs .text-block h1 {
+        margin-bottom: 10px; }
+    .banner-section .lhs:after {
+      content: '';
+      background-color: orange;
+      width: 32px;
+      height: 32px;
+      position: absolute; }
+  .banner-section .rhs {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    height: 540px; }
+    .banner-section .rhs:after {
+      content: '';
+      background-color: brown;
+      width: 32px;
+      height: 32px;
+      position: absolute; }
+
+.building-southeast {
+  padding: 50px 0; }
+  .building-southeast .lhs {
+    float: left; }
+  .building-southeast .rhs {
+    width: 50%;
+    float: right; }
+    .building-southeast .rhs h2, .building-southeast .rhs p {
+      margin-bottom: 15px; }
+  .building-southeast .know-more-cta {
+    background-color: #0A1118; }
+  .building-southeast.south {
+    background-color: #F4F4F4; }
+    .building-southeast.south .lhs {
+      width: 50%; }
+      .building-southeast.south .lhs .three-div .first {
+        padding: 20px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        -webkit-transition: all 0.1s ease-out;
+        transition: all 0.1s ease-out; }
+        .building-southeast.south .lhs .three-div .first p.title {
+          margin-bottom: 10px;
+          font-weight: 700; }
+        .building-southeast.south .lhs .three-div .first p.descr {
+          font-weight: 300; }
+        .building-southeast.south .lhs .three-div .first:hover {
+          background-color: #EDAB5E;
+          cursor: pointer;
+          -webkit-transition: all 0.1s ease-out;
+          transition: all 0.1s ease-out; }
+          .building-southeast.south .lhs .three-div .first:hover p {
+            color: #fff; }
+    .building-southeast.south .rhs {
+      padding: 30px; }
+      .building-southeast.south .rhs .text-block h2 {
+        font-weight: 600; }
+  .building-southeast.family {
+    background-color: #0A1118;
+    padding: 0;
+    position: relative; }
+    .building-southeast.family .lhs {
+      width: 50%; }
+      .building-southeast.family .lhs .content-wrapper {
+        padding: 47px; }
+        .building-southeast.family .lhs .content-wrapper h2 {
+          color: #fff; }
+        .building-southeast.family .lhs .content-wrapper .wrapper p {
+          color: #f4f4f4;
+          margin-bottom: 10px;
+          padding: 20px 0 0 60px;
+          line-height: 125%; }
+          .building-southeast.family .lhs .content-wrapper .wrapper p:before {
+            background: url("../img/tick.svg") no-repeat;
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 170px;
+            margin-top: 10px; }

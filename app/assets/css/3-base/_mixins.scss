@@ -1,0 +1,39 @@
+/* Custom Mixins -------------------- */
+
+@mixin h1-font-style {
+	font-size: $header-font;
+	font-weight: $bold;
+	line-height: 1.2;
+}
+
+@mixin h2-font-style {
+	font-size: $h2-font-size;
+	line-height: 1.2;
+}
+
+@mixin h3-font-style {
+	font-size: $h3-font-size;
+	color: $bg-color;
+	line-height: 1.2;
+}
+
+@mixin p-font-style {
+	font-size: 16px;
+	color: $text-color;
+	line-height: 1.2;
+	font-weight: $semibold;
+}
+
+@mixin primary-cta {
+	padding: 10px;
+	display: inline-block;	
+	a {
+		color: $white;
+	}	
+}
+
+@mixin inline-vertical {
+	display: inline-block;
+	vertical-align: middle;
+}
+

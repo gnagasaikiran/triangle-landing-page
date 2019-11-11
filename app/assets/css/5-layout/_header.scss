@@ -1,0 +1,25 @@
+#Header {
+	background-color: $white;
+	padding: 20px 0;
+	.logo {
+		float: left;		
+	}
+	.menu-wrapper {
+		float: right;
+		ul {
+			display: inline-block;
+			li {
+				@include inline-vertical;
+				padding-right: 20px;				
+				a {
+					color: $text-color;
+					text-transform: uppercase;
+					font-size: $h3-font-size - 3px;					
+				}
+			}
+		}
+		.primary-cta {			
+			background-color: $red-color;
+		}
+	}	
+}
